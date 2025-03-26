@@ -157,6 +157,9 @@
     width: fit-content;
     padding: 0 20px;
   }
+  @media screen and (width < 900px) {
+    height: 460px;
+  }
   @media screen and (width < 440px) {
     padding-top: 20px;
     height: 380px;
@@ -267,6 +270,8 @@
   @media screen and (width < 440px) {
     margin-top: 20px;
     margin-bottom: 20px;
+    margin-left: 12px;
+    margin-right: 12px;
   }
 }
 
