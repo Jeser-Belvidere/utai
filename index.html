@@ -16,6 +16,7 @@
 
 
   <title>UTAI</title>
+  <script type="module" crossorigin src="index-Dytiq2DL.js"></script>
   <link rel="stylesheet" crossorigin href="index-Dprk2JvA.css">
 </head>
 
@@ -92,19 +93,19 @@
         <h2 id="product_title" class="text-medium">PRODUCTS</h2>
         <div class="products-wrapper" id="products-wrapper">
           <div class="product-card">
-            <img src="industry.webp" />
+            <img src="/industry.webp" />
             <p id="industry_product" class="text-1">
               Light manufacturing and consumer goods production
             </p>
           </div>
           <div class="product-card">
-            <img src="food.webp" />
+            <img src="/food.webp" />
             <p id="food_product" class="text-1">
               Food industry
             </p>
           </div>
           <div class="product-card">
-            <img src="mech.webp" />
+            <img src="/mech.webp" />
             <p id="mechanical_product" class="text-1">
               Mechanical engineering
             </p>
@@ -119,52 +120,47 @@
 
 
     <section class="contacts-section" id="contacts">
-      <div class="contacts-wrapper content-wrapper">
-        <div class="contacts-card">
-          <h2 id="contacts_title" class="contacts-card-title text-medium">
-            CONTACT US
-          </h2>
-
-          <form id="contacts-form">
+      <form id="contacts-form">
+        <div class="contacts-wrapper content-wrapper">
+          <div class="contacts-card">
+            <h2 id="contacts_title" class="contacts-card-title text-medium">
+              CONTACT US
+            </h2>
             <div class="contacts-card-content">
               <div>
                 <label for="firstname" type="text">First name *</label>
-                <input id="firstname" name="firstname" value="" type="text"/>
+                <input id="firstname" name="firstname" value="" type="text" />
               </div>
               <div>
                 <label for="lastname">Last name *</label>
-                <input id="lastname" name="lastname" value="" type="text"/>
+                <input id="lastname" name="lastname" value="" type="text" />
               </div>
               <div>
                 <label for="email">Email *</label>
-                <input id="email" name="email" value="" type="email"/>
+                <input id="email" name="email" value="" type="email" />
               </div>
               <div>
                 <label for="mobilephone">Mobile Phone *</label>
-                <input id="mobilephone"  name="mobilephone" value="" type="number"/>
+                <input id="mobilephone" name="mobilephone" value="" type="number" />
               </div>
               <div class="text-area">
                 <label for="notes">Notes</label>
                 <textarea id="notes" name="notes" value="" type="text"></textarea>
               </div>
-
             </div>
             <div class="form-controls desctop-only">
               <button type="submit">Submit</button>
               <button type="reset">Reset</button>
             </div>
+          </div>
         </div>
-      </div>
-
-
-      <div class="form-controls content-wrapper mobile-only">
-        <button type="submit">Submit</button>
-        <button type="reset">Reset</button>
-      </div>
+        <div class="form-controls content-wrapper mobile-only">
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+        </div>
+      </form>
     </section>
-  </form>
 
-    
     <div class="footer content-wrapper">
       <a class="nav-link" href="https://www.narwhaltradingllc.com" target="_blank">WWW.NARWHALTRADINGLLC.COM</a>
       <a class="nav-link" href="mailto:narwhaltradingllc@gmail.com">NARWHALTRADINGLLC@GMAIL.COM</a>
@@ -172,6 +168,5 @@
   </main>
 </body>
 
-<script type="module" crossorigin src="index-Dytiq2DL.js"></script>
 
 </html>
