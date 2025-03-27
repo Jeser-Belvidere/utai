@@ -4,7 +4,10 @@ const isChineseUserLang = zhRegExp.test(userLang);
 
 const engDictionary = {
   //HEADER
+  home_nav: 'Home',
   language_btn: '简体中文 Chinese',
+  products_nav: 'Products',
+  contacts_nav: 'Contact us',
   //HOME
   home_text1: `
       UTAY COMPANY LIMITED is an international company established in 2024 purposely providing international trading,
@@ -39,7 +42,10 @@ const engDictionary = {
 
 const cnDictionary = {
   //NAVIGATION
+  home_nav: '首页',
   language_btn: '英语 English',
+  products_nav: '商品列表',
+  contacts_nav: '联系方式',
   //HOME
   home_text1: `UTAY COMPANY LIMITED是一家成立于2024年的国际公司, 专门提供国际贸易、进出口货物.`,
   //ABOUT
