@@ -15,10 +15,12 @@
   background: #44454b;
   color: #ffffff;
   border-radius: 20px;
-  padding: 7px 18px;
+  padding: 0 18px;
   cursor: pointer;
   text-align: center;
   border-style: none;
+  letter-spacing: 0;
+  height: 32px;
   @media screen and (width < 440px) {
     background: none;
     color: #000000;
@@ -55,28 +57,27 @@
 }
 
 .home-background {
-  background-image: url("/home.webp");
-  background-position: center;
+  background-image: url("/home.png");
   background-size: cover;
   height: 100%;
   border-radius: 30px;
 }
 
 .home-content {
-  gap: 150px;
+  gap: 240px;
   position: relative;
   display: flex;
   flex-direction: column;
   max-width: 320px;
   left: 5%;
-  top: 8%;
+  top: 2%;
   width: fit-content;
   @media screen and (width < 800px) {
     right: -30%;
     padding-left: 10px;
   }
   @media screen and (width < 440px) {
-    gap: 40px;
+    gap: 60px;
     padding-top: 20px;
     right: 0%;
     top: 0;
@@ -89,23 +90,25 @@
   background: #44454b;
   color: #ffffff;
   border-radius: 20px;
-  padding: 6px 10px;
+  padding: 0 10px;
+  height: 35px;
   cursor: pointer;
   text-align: center;
+  letter-spacing: 0;
   @media screen and (width < 440px) {
+    
     font-size: 14px;
     background: none;
     color: #000000;
-    border: 1px solid #000000;
+    border: 2px solid #000000;
+    a {
+      position: relative;
+      top:4px
+    }
   }
 }
 
 .home-text-section {
-  max-width: 613px;
-  padding-top: 40px;
-  p {
-    max-width: 660px;
-  }
   @media screen and (width < 440px) {
     padding-top: 20px;
   }
@@ -149,20 +152,35 @@
   background-position: center;
   background-size: cover;
   padding-top: 36px;
-  height: 550px;
-  h2 {
-    border-radius: 30px;
-    background-color: #ffffff;
-    color: #000000;
-    width: fit-content;
-    padding: 0 20px;
-  }
+  height: 650px;
   @media screen and (width < 900px) {
-    height: 460px;
+    height: 560px;
   }
   @media screen and (width < 440px) {
     padding-top: 20px;
-    height: 380px;
+    height: 480px;
+  }
+}
+
+.products-title {
+  border-radius: 30px;
+  background-color: #ffffff;
+  color: #000000;
+  width: fit-content;
+  padding: 0 20px 0 20px;
+  height: 50px;
+  text-align: center;
+  font-size: 40px;
+  h2 {
+    position: relative;
+    top: -15px;
+  }
+  @media screen and (width < 440px) {
+    font-size: 20px;
+    height: 35px;
+    h2 {
+      top: -2px;
+    }
   }
 }
 
@@ -170,7 +188,9 @@
   max-width: 1200px;
   margin: auto;
   padding-right: 10px;
-  margin-top: 20px;
+  margin-top: 76px;
+  margin-bottom: 76px;
+
   display: flex;
   width: 100%;
   gap: 20px;
@@ -179,12 +199,14 @@
   @media screen and (width > 700px) {
     justify-content: space-between;
   }
+
   .product-card {
     display: inline-flex;
     flex-direction: column;
+    justify-content: space-around;
     background-color: #ffffff;
     border-radius: 30px;
-    padding: 20px;
+    padding: 23px 20px 16px 20px;
     max-width: 310px;
     max-height: 360px;
     min-width: 172px;
@@ -210,7 +232,7 @@
   :nth-child(1) {
     transform: rotate(180deg);
   }
-  
+
   @media screen and (width > 700px) {
     display: none;
   }
@@ -281,7 +303,7 @@
   grid-template-rows: 1fr 1fr;
 
   column-gap: 100px;
-  row-gap: 50px;
+  row-gap: 20px;
   .text-area {
     grid-area: 3 / 1 / 4 / 3;
   }
@@ -290,7 +312,7 @@
     row-gap: 40px;
   }
   @media screen and (width < 440px) {
-    gap: 30px;
+    gap: 20px;
     display: flex;
     flex-direction: column;
     margin-left: 12px;
@@ -305,17 +327,23 @@
   @media screen and (width < 440px) {
     justify-content: center;
   }
+  a {
+    height: 35px;
+    position: relative;
+    top: -4px;
+  }
   button {
     background: #44454b;
     color: #ffffff;
     border-radius: 20px;
-    padding: 4px 18px;
+    padding: 0 18px;
     cursor: pointer;
     text-align: center;
     border-style: none;
     width: 30%;
-    height: 35px;
+    height: 32px;
     font-size: 16px;
+    
     @media screen and (width < 440px) {
       width: 100%;
     }
@@ -327,13 +355,15 @@
   justify-content: space-between;
   background-color: #edf1f2;
   display: flex;
+  align-items: flex-end;
   flex-direction: row;
   padding: 25px 0;
   @media screen and (width < 630px) {
-    flex-direction: column;
     gap: 10px;
   }
   @media screen and (width < 440px) {
+    flex-direction: column;
+    align-items: center;
     gap: 0;
     padding: 0 0;
     align-items: flex-start;

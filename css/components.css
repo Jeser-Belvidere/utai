@@ -1,7 +1,9 @@
 h1 {
   font-size: 64px;
+  line-height: 70px;
   @media screen and (width < 440px) {
     font-size: 41px;
+    line-height: 45px;
   }
 }
 
@@ -28,6 +30,14 @@ a:hover {
   color: rgba(110, 110, 110, 0.7);
 }
 
+button {
+  font-family: Narnoor;
+  p {
+    position: relative;
+    top: -4px;
+  }
+}
+
 button:hover {
   color: rgba(110, 110, 110, 0.7);
 }
@@ -40,7 +50,7 @@ header {
 }
 
 input {
-  border: 1px solid #000000;
+  border: 2px solid #000000;
   border-radius: 30px;
   height: 46px;
   font-size: 24px;
@@ -59,14 +69,14 @@ input[type=number] {
 }
 
 .invalid {
-  border: 1px solid #b63030;
+  border: 2px solid #b63030;
   border-radius: 30px;
   height: 46px;
 }
 
 textarea {
   margin-top: 6px;
-  border: 1px solid #000000;
+  border: 2px solid #000000;
   border-radius: 30px;
   height: 46px;
   font-size: 24px;

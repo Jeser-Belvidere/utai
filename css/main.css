@@ -3,10 +3,29 @@
   padding: 0;
 }
 
+@font-face {
+  font-family: Narnoor;
+  src: url(/Narnoor-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Narnoor;
+  src: url(/Narnoor-Medium.ttf);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: Narnoor;
+  src: url(/Narnoor-Bold.ttf);
+  font-weight: 600;
+}
+
 :root {
-  font-family: Noto sans, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Narnoor, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
+  letter-spacing: -1px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #F9F9F9;

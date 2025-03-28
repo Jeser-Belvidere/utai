@@ -12,9 +12,14 @@
 
 .text-1 {
   font-size: 20px;
+  line-height: 20px;
   @media screen and (width < 440px) {
     font-size: 14px;
   }
+}
+
+.line-height-small {
+  line-height: 20px;
 }
 
 .text-2 {
@@ -31,17 +36,10 @@
   padding-right: 10px;
 }
 
-.br-desktop {
-  @media screen and (width < 440px) {
-    display: none;
-  }
-}
-
-.br-mobile {
-  display: none;
-  @media screen and (width < 440px) {
-    display: block;
-  }
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .mobile-only {
@@ -50,7 +48,7 @@
   }
 }
 
-.desctop-only {
+.desktop-only {
   @media screen and (width < 440px) {
     display: none;
   }

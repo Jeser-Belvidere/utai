@@ -5,7 +5,7 @@ const isChineseUserLang = zhRegExp.test(userLang);
 const engDictionary = {
   //HEADER
   home_nav: 'Home',
-  language_btn: '简体中文 Chinese',
+  language_btn_text: '简体中文 Chinese',
   products_nav: 'Products',
   contacts_nav: 'Contact us',
   //HOME
@@ -34,16 +34,16 @@ const engDictionary = {
       machines, conveyors, spare parts for industrial machinery and spare parts used for industrial manufacturing.
       `,
   //PRODUCTS
-  product_title: 'PRODUCTS',
-  industry_product: 'Light manufacturing and consumer goods production',
-  food_product: 'Food industry',
-  mechanical_product: 'Mechanical engineering'
+  product_title: 'AREAS',
+  industry_product: 'Light manufacturing <br/> and consumer goods production',
+  food_product: 'Food <br/> industry',
+  mechanical_product: 'Mechanical <br/> engineering'
 };
 
 const cnDictionary = {
   //NAVIGATION
   home_nav: '首页',
-  language_btn: '英语 English',
+  language_btn_text: '英语 English',
   products_nav: '商品列表',
   contacts_nav: '联系方式',
   //HOME
@@ -159,4 +159,11 @@ document.getElementById('contacts-form').addEventListener('submit', (event) => {
   }).catch((error) => {
     console.error(new Error(JSON.stringify(error)))
   })
+})
+
+document.getElementById('contacts-home').addEventListener('click', () => {
+  window.location.href='#home'
+})
+document.getElementById('contacts-home-mobile').addEventListener('click', () => {
+  window.location.href='#home'
 })
