@@ -10,14 +10,10 @@
   <meta property="og:title" content="Utai Company Limited" />
   <meta property="og:description" content="International merchant" />
   <meta property="og:image" content="" />
-  <meta property="og:site_name" content="Utai Company Limited" />
-
-
-
-
+  <meta property="og:site_name" content="Utai Company Limited" />
   <title>UTAI</title>
-  <script type="module" crossorigin src="index-CZ3iAU_m.js"></script>
-  <link rel="stylesheet" crossorigin href="index-Dprk2JvA.css">
+  <script type="module" crossorigin src="/assets/index-D2UrGmmv.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-0Sj3lSnd.css">
 </head>
 
 <body>
@@ -28,8 +24,8 @@
       <div class="header-navigation-right">
         <a id="products_nav" class="nav-link text-2" href="#products">Products</a>
         <a id="contacts_nav" class="nav-link text-2" href="#contacts">Contact us</a>
-        <button id="language_btn" class="language_btn nav-link text-2">
-          简体中文 Chinese
+        <button id="language_btn" class="nav-link text-2">
+          <p id="language_btn_text">简体中文 Chinese</p>
         </button>
       </div>
     </nav>
@@ -61,7 +57,7 @@
 
     <section class="about-section content-wrapper" id="about">
       <div class="about-item">
-        <h2 id="about_title_1" class="text-medium">GOAL</h2>
+        <h2 id="about_title_1" class="text-semi-bold">GOAL</h2>
         <p id="about_description_1" class="text-1">
           Our goal is trading with industrial equipment, spare parts for it, other industrial goods for
           production
@@ -72,14 +68,14 @@
         </p>
       </div>
       <div class="about-item">
-        <h2 id="about_title_2" class="text-medium">MISSION</h2>
+        <h2 id="about_title_2" class="text-semi-bold">MISSION</h2>
         <p id="about_description_2" class="text-1">
           Our mission is to simplify business international trading and create well-appointed system of
           exporting and importing goods.
         </p>
       </div>
       <div class="about-item">
-        <h2 id="about_title_3" class="text-medium">BUSINESS</h2>
+        <h2 id="about_title_3" class="text-semi-bold">BUSINESS</h2>
         <p id="about_description_3" class="text-1">
           UTAY COMPANY LIMITED act as an international merchant of industrial machinery used in various fields such as
           machines, conveyors, spare parts for industrial machinery and spare parts used for industrial manufacturing.
@@ -90,24 +86,26 @@
 
     <section class="products-section" id="products">
       <div class='content-wrapper'>
-        <h2 id="product_title" class="text-medium">PRODUCTS</h2>
+        <div class="products-title">
+          <h2 id="product_title" class="text-semi-bold">AREAS</h2>
+        </div>
         <div class="products-wrapper" id="products-wrapper">
           <div class="product-card">
-            <img src="industry.webp" />
+            <img src="/industry.webp" />
             <p id="industry_product" class="text-1">
-              Light manufacturing and consumer goods production
+              Light manufacturing <br /> and consumer goods production
             </p>
           </div>
           <div class="product-card">
-            <img src="food.webp" />
+            <img src="/food.webp" />
             <p id="food_product" class="text-1">
-              Food industry
+              Food <br /> industry
             </p>
           </div>
           <div class="product-card">
-            <img src="mech.webp" />
+            <img src="/mech.webp" />
             <p id="mechanical_product" class="text-1">
-              Mechanical engineering
+              Mechanical <br /> engineering
             </p>
           </div>
         </div>
@@ -123,50 +121,75 @@
       <form id="contacts-form">
         <div class="contacts-wrapper content-wrapper">
           <div class="contacts-card">
-            <h2 id="contacts_title" class="contacts-card-title text-medium">
+            <h2 id="contacts_title" class="contacts-card-title text-semi-bold">
               CONTACT US
             </h2>
             <div class="contacts-card-content">
               <div>
-                <label for="firstname" type="text">First name *</label>
+                <label for="firstname" class="text-medium">First name *</label>
                 <input id="firstname" name="firstname" value="" type="text" />
               </div>
               <div>
-                <label for="lastname">Last name *</label>
+                <label for="lastname" class="text-medium">Last name *</label>
                 <input id="lastname" name="lastname" value="" type="text" />
               </div>
               <div>
-                <label for="email">Email *</label>
+                <label for="email" class="text-medium">Email *</label>
                 <input id="email" name="email" value="" type="email" />
               </div>
               <div>
-                <label for="mobilephone">Mobile Phone *</label>
+                <label for="mobilephone" class="text-medium">Mobile Phone *</label>
                 <input id="mobilephone" name="mobilephone" value="" type="number" />
               </div>
               <div class="text-area">
-                <label for="notes">Notes</label>
+                <label for="notes" class="text-medium">Notes</label>
                 <textarea id="notes" name="notes" value="" type="text"></textarea>
               </div>
             </div>
-            <div class="form-controls desctop-only">
-              <button type="submit">Submit</button>
-              <button type="reset">Reset</button>
+            <div class="form-controls desktop-only">
+              <button type="submit">
+                <p>Submit</p>
+              </button>
+              <button type="reset">
+                <p>Reset</p>
+              </button>
+              <button id="contacts-home" type="button">
+                <p>Home</p>
+              </button>
             </div>
           </div>
         </div>
         <div class="form-controls content-wrapper mobile-only">
-          <button type="submit">Submit</button>
-          <button type="reset">Reset</button>
+          <button type="submit">
+            <p>Submit</p>
+          </button>
+          <button>
+            <p>Reset</p>
+          </button>
+          <button id="contacts-home-mobile" type="button">
+            <p>Home</p>
+          </button>
         </div>
       </form>
     </section>
 
     <div class="footer content-wrapper">
-      <a class="nav-link" href="https://www.narwhaltradingllc.com" target="_blank">WWW.NARWHALTRADINGLLC.COM</a>
-      <a class="nav-link" href="mailto:narwhaltradingllc@gmail.com">NARWHALTRADINGLLC@GMAIL.COM</a>
+      <a class="nav-link" href="http://utay.hk " target="_blank">http://utay.hk </a>
+      <p class="text-2 line-height-small desktop-only">
+        FLAT/RM 2978 29/F <br />
+        INFINITUS PLAZA <br />
+        199 DES VOEUX ROAD CENTRAL <br />
+        SHEUNG WAN HK
+      </p>
+      <a class="nav-link" href="mailto:utaycl@163.com">utaycl@163.com</a>
+      <p class="text-2 line-height-small mobile-only">
+        FLAT/RM 2978 29/F <br />
+        INFINITUS PLAZA <br />
+        199 DES VOEUX ROAD CENTRAL <br />
+        SHEUNG WAN HK
+      </p>
     </div>
   </main>
-</body>
-
+</body>
 
 </html>
