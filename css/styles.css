@@ -334,9 +334,8 @@
 }
 
 /* FOOTER */
-.footer {
+.footer-content {
   justify-content: space-between;
-  background-color: #edf1f2;
   display: flex;
   align-items: flex-end;
   flex-direction: row;

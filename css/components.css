@@ -49,6 +49,10 @@ header {
   }
 }
 
+footer {
+  background-color: #edf1f2;
+}
+
 input {
   border: 2px solid #000000;
   border-radius: 30px;
