@@ -1,3 +1,5 @@
+import Toastify from 'toastify-js'
+import "toastify-js/src/toastify.css"
 const userLang = navigator.language || navigator.userLanguage;
 const zhRegExp = /zh/;
 const isChineseUserLang = zhRegExp.test(userLang);
@@ -5,8 +7,9 @@ const isChineseUserLang = zhRegExp.test(userLang);
 const engDictionary = {
   //HEADER
   home_nav: 'Home',
-  language_btn_text: '简体中文 Chinese',
-  products_nav: 'Products',
+  about_nav: "About us",
+  language_btn: '简体中文 Chinese',
+  products_nav: 'Areas',
   contacts_nav: 'Contact us',
   //HOME
   home_text1: `
@@ -43,7 +46,8 @@ const engDictionary = {
 const cnDictionary = {
   //NAVIGATION
   home_nav: '首页',
-  language_btn_text: '英语 English',
+  about_nav: "关于我们",
+  language_btn: '英语 English',
   products_nav: '商品列表',
   contacts_nav: '联系方式',
   //HOME
@@ -155,15 +159,25 @@ document.getElementById('contacts-form').addEventListener('submit', (event) => {
   fetch('https://example.com', {
     method: 'POST'
   }).then(() => {
-    alert('successfully sent')
+    Toastify({
+      text: currentLang === 'zn' ? '请求已成功发送' : 'The request was successfully sent',
+      duration: 3000,
+      gravity: "bottom",
+      position: "center",
+      style: {
+        background: "#44454b",
+      },
+    }).showToast();
   }).catch((error) => {
+    Toastify({
+      text: currentLang === 'zn' ? '出了点问题' : 'Something went wrong',
+      duration: 3000,
+      gravity: "bottom",
+      position: "center",
+      style: {
+        background: "#752121",
+      },
+    }).showToast();
     console.error(new Error(JSON.stringify(error)))
   })
-})
-
-document.getElementById('contacts-home').addEventListener('click', () => {
-  window.location.href='#home'
-})
-document.getElementById('contacts-home-mobile').addEventListener('click', () => {
-  window.location.href='#home'
 })
