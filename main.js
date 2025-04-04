@@ -6,9 +6,8 @@ const isChineseUserLang = zhRegExp.test(userLang);
 
 const engDictionary = {
   //HEADER
-  home_nav: 'Home',
   about_nav: "About us",
-  language_btn: '简体中文 Chinese',
+  language_btn: 'Chinese',
   products_nav: 'Areas',
   contacts_nav: 'Contact us',
   //HOME
@@ -45,9 +44,8 @@ const engDictionary = {
 
 const cnDictionary = {
   //NAVIGATION
-  home_nav: '首页',
   about_nav: "关于我们",
-  language_btn: '英语 English',
+  language_btn: '英语',
   products_nav: '商品列表',
   contacts_nav: '联系方式',
   //HOME

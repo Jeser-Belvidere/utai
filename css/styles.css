@@ -27,10 +27,6 @@
     border: none;
     padding: 4px 4px;
   }
-  @media screen and (width < 340px) {
-    width: fit-content;
-    padding: 4px 1px;
-  }
 }
 
 .nav-link:hover {
@@ -349,5 +345,8 @@
     gap: 0;
     padding: 0 0;
     align-items: flex-start;
+  }
+  .mobile-only {
+    padding: 4px;
   }
 }
