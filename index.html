@@ -15,6 +15,8 @@
   <link rel="stylesheet" href="css/components.css" />
   <link rel="stylesheet" href="css/helpers.css" />
   <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/flickity.css" />
+
   <title>UTAI</title>
 </head>
 
@@ -88,7 +90,29 @@
         <div class="products-title">
           <h2 id="product_title" class="text-semi-bold">AREAS</h2>
         </div>
-        <div class="products-wrapper" id="products-wrapper">
+
+        <div class="main-carousel mobile-only">
+          <div class="product-card carousel-cell">
+            <img src="/industry.webp" />
+            <p id="industry_product" class="text-1">
+              Light manufacturing <br /> and consumer goods production
+            </p>
+          </div>
+          <div class="product-card carousel-cell">
+            <img src="/food.webp" />
+            <p id="food_product" class="text-1">
+              Food <br /> industry
+            </p>
+          </div>
+          <div class="product-card carousel-cell">
+            <img src="/mech.webp" />
+            <p id="mechanical_product" class="text-1">
+              Mechanical <br /> engineering
+            </p>
+          </div>
+        </div>
+
+        <div class="products-wrapper desktop-only" id="products-wrapper">
           <div class="product-card">
             <img src="/industry.webp" />
             <p id="industry_product" class="text-1">
@@ -169,14 +193,14 @@
     <footer class="footer">
       <div class="footer-content content-wrapper">
         <a class="nav-link" href="http://utay.hk " target="_blank">www.utay.hk </a>
-        <p class="text-2 line-height-small desktop-only">
+        <p class="line-height-small desktop-only address">
           FLAT/RM 2978 29/F <br />
           INFINITUS PLAZA <br />
           199 DES VOEUX ROAD CENTRAL <br />
           SHEUNG WAN HK
         </p>
         <a class="nav-link" href="mailto:utaycl@163.com">utaycl@163.com</a>
-        <p class="text-2 line-height-small mobile-only">
+        <p class="line-height-small mobile-only address">
           FLAT/RM 2978 29/F <br />
           INFINITUS PLAZA <br />
           199 DES VOEUX ROAD CENTRAL <br />

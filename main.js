@@ -1,5 +1,7 @@
 import Toastify from 'toastify-js'
 import "toastify-js/src/toastify.css"
+import Flickity from 'flickity';
+
 const userLang = navigator.language || navigator.userLanguage;
 const zhRegExp = /zh/;
 const isChineseUserLang = zhRegExp.test(userLang);
@@ -96,6 +98,13 @@ document
   .addEventListener("click", (e) => onLanguageChange(e));
 
 // Slider
+
+const flkt = new Flickity('.main-carousel', {
+
+})
+
+
+
 const productsWrapper = document.getElementById('products-wrapper')
 let curr = 0
 

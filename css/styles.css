@@ -178,43 +178,64 @@
   @media screen and (width > 700px) {
     justify-content: space-between;
   }
+}
 
-  .product-card {
-    display: inline-flex;
-    flex-direction: column;
-    justify-content: space-around;
-    background-color: #ffffff;
+.main-carousel {
+  margin-top: 76px;
+  margin-bottom: 76px;
+}
+.carousel-cell {
+  margin-right: 20px;
+}
+
+.flickity-button {
+  display: none !important;
+}
+
+.flickity-page-dots {
+  display: none;
+}
+
+.product-card {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #ffffff;
+  border-radius: 30px;
+  padding: 23px 20px 16px 20px;
+  max-width: 310px;
+  max-height: 360px;
+  min-width: 172px;
+  min-height: 210px;
+  @media screen and (width < 440px) {
+    max-width: 172px;
+    max-height: 257px;
+  }
+  img {
     border-radius: 30px;
-    padding: 23px 20px 16px 20px;
-    max-width: 310px;
-    max-height: 360px;
-    min-width: 172px;
-    min-height: 210px;
-    img {
-      border-radius: 30px;
-      object-fit: cover;
-    }
-    p {
-      margin-top: 6px;
-      text-align: center;
-      text-wrap: balance;
-      width: 100%;
-    }
+    object-fit: cover;
+  }
+  p {
+    margin-top: 6px;
+    text-align: center;
+    text-wrap: balance;
+    width: 100%;
   }
 }
 
 .slide-controls {
   margin-top: 20px;
-  display: flex;
+  display: none;
   gap: 6px;
   justify-content: center;
   :nth-child(1) {
     transform: rotate(180deg);
   }
 
-  @media screen and (width > 700px) {
-    display: none;
+  @media screen and (max-width: 700px) and (min-width: 440px) {
+    display: flex;
   }
+
   button {
     cursor: pointer;
     background-image: url("/arrow.svg");
@@ -333,7 +354,7 @@
 .footer-content {
   justify-content: space-between;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   flex-direction: row;
   padding: 25px 0;
   @media screen and (width < 630px) {
@@ -346,7 +367,17 @@
     padding: 0 0;
     align-items: flex-start;
   }
-  .mobile-only {
-    padding: 4px;
+}
+.address {
+  color: #9f9f9f;
+  line-height: 20px;
+  font-size: 12px;
+  letter-spacing: 3px;
+  padding-left: 4px;
+  padding-right: 4px;
+  br {
+    display: block;
+    margin: -8px;
+    content: " ";
   }
 }
