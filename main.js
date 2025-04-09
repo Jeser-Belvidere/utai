@@ -6,10 +6,13 @@ const userLang = navigator.language || navigator.userLanguage;
 const zhRegExp = /zh/;
 const isChineseUserLang = zhRegExp.test(userLang);
 
+const requestURL = 'https://example.com'
+
+
 const engDictionary = {
   //HEADER
   about_nav: "About us",
-  language_btn: 'Chinese',
+  language_btn: '简体中文',
   products_nav: 'Areas',
   contacts_nav: 'Contact us',
   //HOME
@@ -47,7 +50,7 @@ const engDictionary = {
 const cnDictionary = {
   //NAVIGATION
   about_nav: "关于我们",
-  language_btn: '英语',
+  language_btn: 'English',
   products_nav: '商品列表',
   contacts_nav: '联系方式',
   //HOME
@@ -157,13 +160,13 @@ document.getElementById('contacts-form').addEventListener('submit', (event) => {
   const data = {
     firstname: firstnameInput.value.trim(),
     lastname: lastnameInput.value.trim(),
-    emailInput: emailInput.value.trim(),
-    mobilephone: mobilephoneInput.value.trim(),
+    email: emailInput.value.trim(),
+    phone: mobilephoneInput.value.trim(),
     notes: notesInput.value.trim()
   }
 
   console.dir(data)
-  fetch('https://example.com', {
+  fetch(requestURL, {
     method: 'POST'
   }).then(() => {
     Toastify({
