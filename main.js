@@ -44,15 +44,27 @@ const engDictionary = {
   product_title: 'AREAS',
   industry_product: 'Light manufacturing <br/> and consumer goods production',
   food_product: 'Food <br/> industry',
-  mechanical_product: 'Mechanical <br/> engineering'
+  mechanical_product: 'Mechanical <br/> engineering',
+  industry_product_mob: 'Light manufacturing <br/> and consumer goods production',
+  food_product_mob: 'Food <br/> industry',
+  mechanical_product_mob: 'Mechanical <br/> engineering',
+  //CONTACTS
+  contacts_title: 'CONTACT US',
+  firstname_label: 'First name *',
+  lastname_label: 'Last name *',
+  email_label: 'Email *',
+  mobilephone_label: 'Mobile Phone *',
+  notes_label: 'Notes',
+  submit_btn: 'Submit',
+  reset_btn: 'Reset'
 };
 
 const cnDictionary = {
   //NAVIGATION
   about_nav: "关于我们",
   language_btn: 'English',
-  products_nav: '商品列表',
-  contacts_nav: '联系方式',
+  products_nav: '商业领域',
+  contacts_nav: '联系我们',
   //HOME
   home_text1: `UTAY COMPANY LIMITED是一家成立于2024年的国际公司, 专门提供国际贸易、进出口货物.`,
   //ABOUT
@@ -63,10 +75,22 @@ const cnDictionary = {
   about_title_3: '商业',
   about_description_3: 'UTAY COMPANY LIMITED是一家国际贸易商, 经营各种领域的工业机械, 如机器、输送机、工业机械备件和工业制造备件.',
   //PRODUCTS
-  product_title: '地区',
-  industry_product: '轻工业和消费品生产',
-  food_product: '食品工业',
-  mechanical_product: '机械工程'
+  product_title: '商业领域',
+  industry_product_mob: '轻工业及消费品制造',
+  food_product_mob: '食品产业',
+  mechanical_product_mob: '机械工程',
+  industry_product: '轻工业及消费品制造',
+  food_product: '食品产业',
+  mechanical_product: '机械工程',
+  //CONTACTS
+  contacts_title: '联系我们',
+  firstname_label: '名字 *',
+  lastname_label: '姓 *',
+  email_label: '电子邮箱 *',
+  mobilephone_label: '电话号码 *',
+  notes_label: '笔记',
+  submit_btn: '提交',
+  reset_btn: '重置'
 };
 
 // zn | en
@@ -92,9 +116,12 @@ const onLanguageChange = () => {
   }
 };
 
-if (isChineseUserLang) {
-  onLanguageChange();
-}
+document.addEventListener('DOMContentLoaded', () => {
+  if (isChineseUserLang) {
+    onLanguageChange();
+  }
+})
+
 
 document
   .getElementById("language_btn")
